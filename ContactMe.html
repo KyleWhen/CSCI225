@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/MyCSS.css">
@@ -20,6 +20,10 @@
             </li>
         </ul>
     </div>
+  
+  <video width="320" height="240" controls>
+  <source src="Floppa_Flip.mp4" type="video/mp4">
+</video>
 
     <address id="contactInfo">
         <p>
@@ -28,34 +32,54 @@
         <a href="mailto:kb33@usca.edu">You can e-mail me at kb33@usca.edu</a>
     </address>
 
-    <form name="test">
+    <form name="feedback">
         <p>
-            Name: <input type="text" name="fname">
+            First Name: <input type="text" name="fname" placeholder="anonymous">
 </p>
         <p>
-  <!-- password is not secure -->
-        Password: <input type="password" name="pwd">
-        </p>
-<p>
-  Check: <br>
-
-  <input type="checkbox" name="rating" value="Great"> Great Job 
-  <br>
-  <input type="checkbox" name="rating" value="Fine"> Fine Job 
-
+            Last Name: <input type="text" name="fname" placeholder="anonymous">
+</p>
+        <p>
+            Email: <input type="text" name="mail" placeholder="name@domain.com">
+</p>
+    <form name="favorite">
+      <p>
+        What's your favorite website: <select id="website" name="favorite" form="webform" laceholder="favorite">
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Twitter">Twitter</option>
+        <option value="YouTube">YouTube</option>
+        <option value="Snapchad">Snapchat</option>
+</select>
+      </p>
+    <form name="rating">
+      <p>
+        Rate your favorite website on a scale from 1 to 10: <input type="range" id="rating" name="favorite" min="0" max="10">
+      </p>
+      </form>
+      
 </p>
 
 <p>
-  Radio: <br>
+  Would you recommend this site: <br>
   
-  <input type="radio" name="ratingradio" value="Great" checked> Great Job 
+  <input type="radio" name="ratingradio" value="Yes" checked> Yes 
   <br>
-  <input type="radio" name="ratingradio" value="Fine"> Fine Job 
+  <input type="radio" name="ratingradio" value="No"> No 
 
 </p> 
-<input type="reset" value="Reset">
+  
+<input type="reset" value="Reset" name="Reset">
 
-<input type="submit" value="click me to submit">
+<input type="submit" value="Submit">
+            </form>
+<form name="comment">
+  <p>
+    Please enter any additional comments: <textarea rows="4" cols="50" name="comment"></textarea>
+  </p>
+</form>
+<br>
 
     </form>
 </html>
+

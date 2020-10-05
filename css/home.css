@@ -1,6 +1,6 @@
 h1{
     position: fixed;
-    top: 0px;
+    top: -5px;
     left: 0px;
     padding: 5px;
     margin: 0px;
@@ -8,7 +8,7 @@ h1{
 }
 h2{
     position: fixed;
-    top: 100px;
+    top: 75px;
     left: 0px;
     padding: 5px;
     margin: 0px;

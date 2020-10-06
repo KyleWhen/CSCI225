@@ -15,5 +15,6 @@ h2{
     width: 100%;
 }
 img{
+    top: -20px;
     float: right;
 }

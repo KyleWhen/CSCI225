@@ -53,23 +53,29 @@ img{
 
 .contactInfo{
     position: relative;
-    left: 50px;
+    right: 50px;
 }
 .feedback{
-    float: right;
+    position: relative;
+    right: 50px;
 }
 .favorite{
-    float: right;
+    position: relative;
+    right: 50px;
 }
 .rating{
-    float: right;
+    position: relative;
+    right: 50px;
 }
 .comment{
-    float: right;
+    position: relative;
+    right: 50px;
 }
 .ratingradio{
-    float: right;
+    position: relative;
+    right: 50px;
 }
 .Reset{
-    float: right;
+    position: relative;
+    right: 50px;
 }

@@ -51,24 +51,24 @@ img{
     color: white;
 }
 
-.contactInfo{
+.contactInfo a{
     float: right;
 }
-.feedback{
+.feedback a{
     float: right;
 }
-.favorite{
+.favorite a{
     float: right;
 }
-.rating{
+.rating a{
     float: right;
 }
-.comment{
+.comment a{
     float: right;
 }
-.ratingradio{
+.ratingradio a{
     float: right;
 }
-.Reset{
+.Reset a{
     float: right;
 }

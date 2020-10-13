@@ -51,25 +51,25 @@ img{
     color: white;
 }
 
-.contactInfo a{
+.contactInfo{
     position: relative;
     left: 50px;
 }
-.feedback a{
+.feedback{
     float: right;
 }
-.favorite a{
+.favorite{
     float: right;
 }
-.rating a{
+.rating{
     float: right;
 }
-.comment a{
+.comment{
     float: right;
 }
-.ratingradio a{
+.ratingradio{
     float: right;
 }
-.Reset a{
+.Reset{
     float: right;
 }

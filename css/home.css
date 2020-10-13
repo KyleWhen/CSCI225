@@ -50,3 +50,25 @@ img{
     background-color: #4CAF50;
     color: white;
 }
+
+.contactInfo{
+    float: right;
+}
+.feedback{
+    float: right;
+}
+.favorite{
+    float: right;
+}
+.rating{
+    float: right;
+}
+.comment{
+    float: right;
+}
+.ratingradio{
+    float: right;
+}
+.Reset{
+    float: right;
+}

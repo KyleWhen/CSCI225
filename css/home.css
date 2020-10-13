@@ -27,6 +27,10 @@ img{
     top: -35px;
     float: right;
 }
+.navbar{
+    background-color: #555;
+    overflow: hidden;
+}
   
 .navbar a{
     float: left;
@@ -43,7 +47,7 @@ img{
 }
   
 .navbar a.active{
-    background-color: #4CAF50;
+    background-color: #8531bd;
     color: white;
 }
 

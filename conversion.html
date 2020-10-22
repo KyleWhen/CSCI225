@@ -8,7 +8,7 @@
         <form>
 
         <script>
-          function lengthConverter(input){
+          function unitConversion(input){
             if(input == "feet1" && output == "inches2"){
           document.getElementById("Output").innerHTML=input*12;
         }
@@ -31,7 +31,7 @@
 
         </script>
         
-          <input type="number" id="value" placeholder="Insert value" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+          <input type="number" id="value" placeholder="Insert value" oninput="unitConversion(this.value)" onchange="unitConversion(this.value)">
           <select name="input" id="Selection1">
             <option>Choose an option</option>
             <option value="feet1">Feet</option>
@@ -46,7 +46,6 @@
             <option value="inches2">Inches</option>
             <option value="miles2">Miles</option>
           </select>
-          </p>
         </form>
       </body>
 </html>

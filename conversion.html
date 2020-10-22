@@ -10,30 +10,32 @@
         <script>
           if(input == "feet1" && output == "inches2"){
             function LengthConverter(input) {
-          document.getElementById("outputInches").innerHTML=input*12;
+          document.getElementById("Output").innerHTML=input*12;
         }
           }
           
           if(input == "feet1" && output == "meters2"){
             function LengthConverter(input) {
-          document.getElementById("outputMeters").innerHTML=input/3.2808;
+          document.getElementById("Output").innerHTML=input/3.2808;
         }
           }
 
           if(input == "feet1" && output == "yards2"){
             function LengthConverter(input) {
-          document.getElementById("outputYards").innerHTML=input*0.33333;
+          document.getElementById("Output").innerHTML=input*0.33333;
         }
           }
 
           if(input == "feet1" && output == "miles2"){
             function LengthConverter(input) {
-          document.getElementById("outputMiles").innerHTML=input*0.00018939;
+          document.getElementById("Output").innerHTML=input*0.00018939;
         }
           }
 
         </script>
         
+        <p>
+          <label>Input</label>
           <input type="number" id="value" placeholder="Insert value" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
           <select name="input" id="Selection1">
             <option>Choose an option</option>
@@ -44,8 +46,10 @@
             <option value="miles1">Miles</option>
             <option value="kilometers1">Kilometers</option>
           </select>
+          </p>
           =
-          <input type="text" id="Output" placeholder="Output value">
+          <p>
+          Output: <span id="Output" type="text" placeholder="Output value"></span>
           <select name="output" id="Selection2">
             <option>Choose an option</option>
             <option value="feet2">Feet</option>
@@ -55,6 +59,7 @@
             <option value="miles2">Miles</option>
             <option value="kilometers2">Kilometers</option>
           </select>
+          </p>
         </form>
       </body>
 </html>

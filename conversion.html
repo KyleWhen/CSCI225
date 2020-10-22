@@ -34,8 +34,8 @@
 
         </script>
         
-          <input type="number" id="value" placeholder="Insert value">
-          <select name="input" id="Selection1">
+          <input type="number" id="value" placeholder="Insert value" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">>
+          <select name="input" id="Selection1" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)"></select>>
             <option>Choose an option</option>
             <option value="feet1">Feet</option>
             <option value="inches1">Inches</option>
@@ -55,11 +55,6 @@
             <option value="miles2">Miles</option>
             <option value="kilometers2">Kilometers</option>
           </select>
-      
-      
-          <br>
-          <br>
-          <input type="Button" onclick="Conversion()" value="convert">
         </form>
       </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Unit Conversion Calculator</title>
+        <script src="unitconversion.js"></script>
+    </head>
+    <body>
+        <form>
+      
+          
+          <label>From:</label>
+          <select name="converts" id="Selection">
+            <option>Choose an option</option>
+            <option value="kilograms1">Kilograms</option>
+            <option value="grams1">Grams</option>
+            <option value="miligrams1">Miligrams</option>
+          </select>
+      
+          <!-- Select 2-->
+          <label>To:</label>
+          <select name="converts2" id="Selection2">
+            <option>Choose an option</option>
+            <option value="kilograms2">Kilograms</option>
+            <option value="grams2">Grams</option>
+            <option value="miligrams2">Miligrams</option>
+          </select>
+      
+      
+          <!--INPUT-->
+          <br>
+          <br>
+          <br>Value
+          <input type="number" id="value" placeholder="Insert value">
+      
+          <!--RESULT -->
+          <br>Conversion
+          <input type="text" id="convertedOutput">
+      
+          <br>
+          <br>
+          <input type="Button" onclick="Conversion()" value="convert">
+        </form>
+      </body>
+</html>

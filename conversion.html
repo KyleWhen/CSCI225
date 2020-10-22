@@ -12,57 +12,38 @@
             if(input == "feet1" && output == "inches2"){
           document.getElementById("Output").innerHTML=input*12;
         }
-          }
-          if(input == "feet1" && output == "inches2"){
-            function LengthConverter(input) {
-          document.getElementById("Output").innerHTML=input*12;
-        }
-          }
-          
-          if(input == "feet1" && output == "meters2"){
-            function LengthConverter(input) {
-          document.getElementById("Output").innerHTML=input/3.2808;
-        }
-          }
-
-          if(input == "feet1" && output == "yards2"){
-            function LengthConverter(input) {
-          document.getElementById("Output").innerHTML=input*0.33333;
-        }
-          }
-
-          if(input == "feet1" && output == "miles2"){
-            function LengthConverter(input) {
+            if(input == "feet1" && output == "miles2"){
           document.getElementById("Output").innerHTML=input*0.00018939;
+        }
+            if(input == "inches1" && output == "feet2"){
+          document.getElementById("Output").innerHTML=input*0.083333;
+        }
+            if(input == "inches1" && output == "miles2"){
+          document.getElementById("Output").innerHTML=input*0.000015783;
+        }
+            if(input == "miles1" && output == "feet2"){
+          document.getElementById("Output").innerHTML=input*5280;
+        }
+            if(input == "miles1" && output == "feet2"){
+          document.getElementById("Output").innerHTML=input*63360;
         }
           }
 
         </script>
         
-        <p>
-          <label>Input</label>
           <input type="number" id="value" placeholder="Insert value" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
           <select name="input" id="Selection1">
             <option>Choose an option</option>
             <option value="feet1">Feet</option>
             <option value="inches1">Inches</option>
-            <option value="meters1">Meters</option>
-            <option value="yards1">Yards</option>
             <option value="miles1">Miles</option>
-            <option value="kilometers1">Kilometers</option>
           </select>
-          </p>
           =
-          <p>
-          Output: <span id="Output" type="text" placeholder="Output value"></span>
-          <select name="output" id="Selection2">
+          <select name="Output" type="text" id="Selection2" placeholder="Output value"></select>
             <option>Choose an option</option>
             <option value="feet2">Feet</option>
             <option value="inches2">Inches</option>
-            <option value="meters2">Meters</option>
-            <option value="yards2">Yards</option>
             <option value="miles2">Miles</option>
-            <option value="kilometers2">Kilometers</option>
           </select>
           </p>
         </form>

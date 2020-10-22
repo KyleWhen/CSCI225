@@ -6,40 +6,54 @@
     </head>
     <body>
         <form>
-      
-          <script>
-          function Conversion() {
-            var val = document.getElementById("value").value;
-            var output = document.getElementById("Output");
-          
-            var selectFrom = document.getElementById("Selection");
-            var selectTo = document.getElementById("Selection2");
-          
-            var madeSelection_1 = selectFrom[selectFrom.selectedIndex].value;
-            var madeSelection_2 = selectTo[selectTo.selectedIndex].value;
-          
-            if (madeSelection_1 == "kilograms1" && madeSelection_2 == "kilograms2") {
-              var result = val * 1;
-              output.value = result;
-          
-            }
+
+        <script>
+          if(input == "feet1" && output == "inches2"){
+            function LengthConverter(input) {
+          document.getElementById("outputInches").innerHTML=input*12;
+        }
           }
+          
+          if(input == "feet1" && output == "meters2"){
+            function LengthConverter(input) {
+          document.getElementById("outputMeters").innerHTML=input/3.2808;
+        }
+          }
+
+          if(input == "feet1" && output == "yards2"){
+            function LengthConverter(input) {
+          document.getElementById("outputYards").innerHTML=input*0.33333;
+        }
+          }
+
+          if(input == "feet1" && output == "miles2"){
+            function LengthConverter(input) {
+          document.getElementById("outputMiles").innerHTML=input*0.00018939;
+        }
+          }
+
         </script>
         
           <input type="number" id="value" placeholder="Insert value">
-          <select name="converts" id="Selection">
+          <select name="input" id="Selection1">
             <option>Choose an option</option>
-            <option value="kilograms1">Kilograms</option>
-            <option value="grams1">Grams</option>
-            <option value="miligrams1">Miligrams</option>
+            <option value="feet1">Feet</option>
+            <option value="inches1">Inches</option>
+            <option value="meters1">Meters</option>
+            <option value="yards1">Yards</option>
+            <option value="miles1">Miles</option>
+            <option value="kilometers1">Kilometers</option>
           </select>
           =
           <input type="text" id="Output" placeholder="Output value">
-          <select name="converts2" id="Selection2">
+          <select name="output" id="Selection2">
             <option>Choose an option</option>
-            <option value="kilograms2">Kilograms</option>
-            <option value="grams2">Grams</option>
-            <option value="miligrams2">Miligrams</option>
+            <option value="feet2">Feet</option>
+            <option value="inches2">Inches</option>
+            <option value="meters2">Meters</option>
+            <option value="yards2">Yards</option>
+            <option value="miles2">Miles</option>
+            <option value="kilometers2">Kilometers</option>
           </select>
       
       

@@ -38,13 +38,13 @@ h4{
     font-weight: bold;
 }
 ul{
-    list-style-image: url('duck.jpeg');
+    list-style-image: url("duck.jpeg");
 }
 li{
-    list-style-image: url('duck.jpeg');
+    list-style-image: url("duck.jpeg");
 }
 body{
-    background-image: url('duck.jpeg');
+    background-image: url("duck.jpeg");
 }
 img{
     position: relative;

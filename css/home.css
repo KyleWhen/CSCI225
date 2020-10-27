@@ -40,6 +40,9 @@ h4{
 ul{
     list-style-image: url('duck.jpeg');
 }
+li{
+    list-style-image: url('duck.jpeg');
+}
 img{
     position: relative;
     top: -35px;

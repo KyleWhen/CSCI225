@@ -11,6 +11,9 @@ h1{
     width: 100%;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #ffffff;
 }
 h2{
     position: fixed;
@@ -56,8 +59,8 @@ img{
 }
   
 .navbar a:hover{
-    background-color: #ddd;
-    color: black;
+    background-color: lightgreen;
+    color: blue;
 }
   
 .navbar a.active{
@@ -70,6 +73,14 @@ img{
     right: 50px;
     color: black;
     font-weight: bold;
+}
+.contactInfo a{
+    text-decoration: none;
+    background-color: blue;
+}
+.contactInfo a:hover{
+    text-decoration: none;
+    background-color: lightgreen;
 }
 .feedback{
     position: relative;
@@ -106,4 +117,26 @@ img{
     right: 50px;
     color: black;
     font-weight: bold;
+}
+.assignment{
+    text-decoration: none;
+}
+.assignment a{
+    text-decoration: none;
+    background-color: blue;
+}
+.assignment a:hover{
+    text-decoration: none;
+    background-color: lightgreen;
+}
+.portfolio{
+    text-decoration: none;
+}
+.portfolio a{
+    text-decoration: none;
+    background-color: blue;
+}
+.portfolio a:hover{
+    text-decoration: none;
+    background-color: lightgreen;
 }

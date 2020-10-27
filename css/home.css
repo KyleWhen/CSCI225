@@ -37,6 +37,9 @@ h4{
     color: black;
     font-weight: bold;
 }
+ul{
+    list-style-image: url('duck.jpeg');
+}
 img{
     position: relative;
     top: -35px;

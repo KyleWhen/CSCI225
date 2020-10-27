@@ -43,6 +43,9 @@ ul{
 li{
     list-style-image: url('duck.jpeg');
 }
+body{
+    background-image: url('duck.jpeg');
+}
 img{
     position: relative;
     top: -35px;

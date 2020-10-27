@@ -46,6 +46,7 @@ img{
     background-color: #555;
     overflow: hidden;
     font-weight: bold;
+    visibility: hidden;
 }
   
 .navbar a{

@@ -1,3 +1,7 @@
+.serif {
+    font-family: "Times New Roman", Times, serif;
+  }
+
 h1{
     position: fixed;
     top: -20px;
@@ -5,6 +9,7 @@ h1{
     padding: 5px;
     margin: 0px;
     width: 100%;
+    color: black
 }
 h2{
     position: fixed;
@@ -13,14 +18,17 @@ h2{
     padding: 5px;
     margin: 0px;
     width: 100%;
+    color: black
 }
 h3{
     position: absolute;
     top: 190px;
+    color: black
 }
 h4{
     position: relative;
     top: 40px;
+    color: black
 }
 img{
     position: relative;
@@ -54,28 +62,35 @@ img{
 .contactInfo{
     position: relative;
     right: 50px;
+    color: black
 }
 .feedback{
     position: relative;
     right: 50px;
+    color: black
 }
 .favorite{
     position: relative;
     right: 50px;
+    color: black
 }
 .rating{
     position: relative;
     right: 50px;
+    color: black
 }
 .comment{
     position: relative;
     right: 50px;
+    color: black
 }
 .ratingradio{
     position: relative;
     right: 50px;
+    color: black
 }
 .Reset{
     position: relative;
     right: 50px;
+    color: black
 }

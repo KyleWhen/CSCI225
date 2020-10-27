@@ -42,11 +42,14 @@ img{
     top: -35px;
     float: right;
 }
+li{
+    display: inline-block;
+}
 .navbar{
     background-color: #555;
     overflow: hidden;
     font-weight: bold;
-    visibility: hidden;
+    
 }
   
 .navbar a{

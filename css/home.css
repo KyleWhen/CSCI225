@@ -76,10 +76,11 @@ img{
 }
 .contactInfo a{
     text-decoration: none;
-    background-color: blue;
+    color: #d1b0b0;
 }
 .contactInfo a:hover{
     text-decoration: none;
+    color: blue;
     background-color: lightgreen;
 }
 .feedback{
@@ -123,10 +124,11 @@ img{
 }
 .assignment a{
     text-decoration: none;
-    background-color: blue;
+    color: #d1b0b0;
 }
 .assignment a:hover{
     text-decoration: none;
+    color: blue;
     background-color: lightgreen;
 }
 .portfolio{
@@ -134,9 +136,10 @@ img{
 }
 .portfolio a{
     text-decoration: none;
-    background-color: blue;
+    color: #d1b0b0;
 }
 .portfolio a:hover{
     text-decoration: none;
+    color: blue;
     background-color: lightgreen;
 }

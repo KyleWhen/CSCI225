@@ -9,7 +9,8 @@ h1{
     padding: 5px;
     margin: 0px;
     width: 100%;
-    color: black
+    font-weight: bold;
+    color: black;
 }
 h2{
     position: fixed;
@@ -18,17 +19,20 @@ h2{
     padding: 5px;
     margin: 0px;
     width: 100%;
-    color: black
+    font-weight: bold;
+    color: black;
 }
 h3{
     position: absolute;
     top: 190px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 h4{
     position: relative;
     top: 40px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 img{
     position: relative;
@@ -38,6 +42,7 @@ img{
 .navbar{
     background-color: #555;
     overflow: hidden;
+    font-weight: bold;
 }
   
 .navbar a{
@@ -47,6 +52,7 @@ img{
     padding: 6px 8px;
     text-decoration: none;
     font-size: 12px;
+    font-weight: bold;
 }
   
 .navbar a:hover{
@@ -62,35 +68,42 @@ img{
 .contactInfo{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .feedback{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .favorite{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .rating{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .comment{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .ratingradio{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }
 .Reset{
     position: relative;
     right: 50px;
-    color: black
+    color: black;
+    font-weight: bold;
 }

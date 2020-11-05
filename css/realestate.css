@@ -1,0 +1,85 @@
+h1{
+    margin-left: 750px;
+    position: relative;
+    background-color: lightblue;
+    width: 453px;
+    padding: 25px;
+    margin: 20px;
+    right: -761px;
+    top: 70px;
+}
+body{
+    background-image: url('https://www.10stunninghomes.com/wp-content/uploads/House-S-By-Stephan-Maria-Lang.jpg');
+}
+.loanData{
+    display: block;
+    text-decoration: none;
+    padding: 1px;
+    margin: 50px;
+    background-color: #b1c8eb;
+    float: right;
+    height: 500px;
+    width: 500px;
+
+}
+.loanData > input{
+    margin-left: 300px;
+    position: relative;
+    top: -35px
+}
+.Date{
+    margin-left: 300px;
+    position: relative;
+    top: -35px;
+}
+.loanResults{
+    margin-left: 215px;
+    position: relative;
+    top: -35px;
+}
+.Month{
+    margin-left: 300px;
+    position: relative;
+    top: -35px;
+    right: 50px;
+}
+.Year{
+    margin-left: 300px;
+    position: relative;
+    top: -54px;
+    right: -42px;
+}
+.showLoan{
+    margin-left: 250px;
+    position: relative;
+    top: -70px;
+    right: -50px;
+}
+.calcButton{
+    margin-left: 250px;
+    position: relative;
+    background-color: lightblue;
+    top: 40px;
+    right: 20px;
+    width: 450px;
+    padding: 25px;
+    margin: 20px;
+}
+.output{
+    margin-left: 250px;
+    position: relative;
+    background-color: lightblue;
+    top: 40px;
+    right: 20px;
+    width: 450px;
+    padding: 25px;
+    margin: 20px;
+}
+a:link, a:visited {
+    background-color: #1441a1;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

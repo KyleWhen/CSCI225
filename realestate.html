@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/MyCSS.css">
+        <link rel="stylesheet" href=" css/realestate.css ">
+        <meta charset="utf-8"/>
+        <title>Real Estate Loan Calculator</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="#buy" target="_blank">Buy</a>
+            <a href="#sale" target="_blank">Sale</a>
+            <a href="#loan" target="_blank">Loan</a>
+            <a href="#about" target="_blank">About</a>
+    </div>
+
+        <h1>Loan Information</h1>
+        <div class="loanData">
+            <p style= text-align:center;>Loan Amount $</p>
+            <input type="text" placeholder="Please enter your loan's amount" id="Amount">
+            <p style= text-align:center;>Interest Rate %</p>
+            <input type="text" placeholder="Please enter your loan's interest rate" id="Interest">
+            <p style= text-align:center;>Loan Term</p>
+            <input type="text" placeholder="Please enter your loan's term" id="Term">
+            <p style= text-align:center;>Start Date</p>
+            <div class="Month">
+            <select id="Date">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+        </div>
+            <div class="Year">
+            <select id="Year">
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+            </select>
+        </div>
+        <div class="loanResults"><p>Show results by: </p></div>
+        <div class="showLoan">
+            <select>
+                <option>Year</option>
+            </select>
+        </div>
+        <div class="calcButton">
+            <button type="button" class="button" id="calculate">Calculate</button>
+        </div>
+    </div>
+        
+        <div id="monthlyPayment" style="margin-top: -50px; margin-left: 500px; background-color: white; width: 200px;"></div>
+        <div id="output"></div>
+        
+        <script>
+        document.getElementById("calculate").addEventListener("click", loanCalculator)
+        function loanCalculator(){
+            var loanAmount = document.getElementById("Amount").value;
+            var loanInterest = document.getElementById("Interest").value;
+            var loanTerm = document.getElementById("Term").value;
+            var years = document.getElementById("Year").value;
+            var loanPercentage = loanInterest / 100;
+            var monthlyInterest = loanPercentage / 12;
+            var months = loanTerm * 12;
+            var monthlyPayment = loanAmount * monthlyInterest/(1-Math.pow(1+monthlyInterest, -months));
+            var balance = loanAmount;
+            var principal;
+            var paidInterest = balance * monthlyInterest;
+            document.getElementById("monthlyPayment").innerHTML = "Monthly Payment: " + monthlyPayment.toFixed(2);  
+            var result="<table style='margin-top: 10px; margin-left: 500px; background-color: #ffffff'>";
+            result += "<tr><th>Date</th><th>Interest</th><th>Principal</th><th>Balance</th></tr>";
+            for(var i = 0; i < loanTerm; i++){
+                var interestYear = 0;
+                var principalYear = 0;
+            for(var j = 0; j < 12; j++){
+                paidInterest = balance * monthlyInterest;
+                principal = monthlyPayment - paidInterest; 
+                balance = balance - principal;
+                interestYear += paidInterest;
+                principalYear += principal;
+            }
+            result += "<tr><td>" + years + "</td><td>" + "$" + interestYear.toFixed(2) + "</td><td>" + "$" + principalYear.toFixed(2) + "</td><td>" + "$" + balance.toFixed(2) + "</td></tr>";
+            years++;
+            }
+            result += "</table>";
+            document.getElementById("output").innerHTML = result;     
+        }
+        </script>
+        </body>
+</html>

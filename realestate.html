@@ -73,14 +73,14 @@
             var loanAmount = document.getElementById("Amount").value;
             var loanInterest = document.getElementById("Interest").value;
             var loanTerm = document.getElementById("Term").value;
-            var years = document.getElementById("Year").value;
+            var loanYears = document.getElementById("Year").value;
             var loanPercentage = loanInterest / 100;
             var monthlyInterest = loanPercentage / 12;
-            var months = loanTerm * 12;
-            var monthlyPayment = loanAmount * monthlyInterest/(1-Math.pow(1+monthlyInterest, -months));
-            var balance = loanAmount;
-            var principal;
-            var paidInterest = balance * monthlyInterest;
+            var loanMonths = loanTerm * 12;
+            var monthlyPayment = loanAmount * monthlyInterest/(1-Math.pow(1+monthlyInterest, -loanMonths));
+            var loanBalance = loanAmount;
+            var loanPrincipal;
+            var paidInterest = loanBalance * monthlyInterest;
             document.getElementById("monthlyPayment").innerHTML = "Monthly Payment: " + monthlyPayment.toFixed(2);  
             var result="<table style='margin-top: 10px; margin-left: 500px; background-color: #ffffff'>";
             result += "<tr><th>Date</th><th>Interest</th><th>Principal</th><th>Balance</th></tr>";
@@ -88,13 +88,13 @@
                 var interestYear = 0;
                 var principalYear = 0;
             for(var j = 0; j < 12; j++){
-                paidInterest = balance * monthlyInterest;
-                principal = monthlyPayment - paidInterest; 
-                balance = balance - principal;
+                paidInterest = loanBalance * monthlyInterest;
+                loanPrincipal = monthlyPayment - paidInterest; 
+                loanBalance = loanBalance - loanPrincipal;
                 interestYear += paidInterest;
-                principalYear += principal;
+                principalYear += loanPprincipal;
             }
-            result += "<tr><td>" + years + "</td><td>" + "$" + interestYear.toFixed(2) + "</td><td>" + "$" + principalYear.toFixed(2) + "</td><td>" + "$" + balance.toFixed(2) + "</td></tr>";
+            result += "<tr><td>" + loanYears + "</td><td>" + "$" + interestYear.toFixed(2) + "</td><td>" + "$" + principalYear.toFixed(2) + "</td><td>" + "$" + loanBalance.toFixed(2) + "</td></tr>";
             years++;
             }
             result += "</table>";

@@ -95,7 +95,7 @@
                 principalYear += loanPrincipal;
             }
             result += "<tr><td>" + loanYears + "</td><td>" + "$" + interestYear.toFixed(2) + "</td><td>" + "$" + principalYear.toFixed(2) + "</td><td>" + "$" + loanBalance.toFixed(2) + "</td></tr>";
-            years++;
+            loanYears++;
             }
             result += "</table>";
             document.getElementById("output").innerHTML = result;     

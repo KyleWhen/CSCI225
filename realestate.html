@@ -92,7 +92,7 @@
                 loanPrincipal = monthlyPayment - paidInterest; 
                 loanBalance = loanBalance - loanPrincipal;
                 interestYear += paidInterest;
-                principalYear += loanPprincipal;
+                principalYear += loanPrincipal;
             }
             result += "<tr><td>" + loanYears + "</td><td>" + "$" + interestYear.toFixed(2) + "</td><td>" + "$" + principalYear.toFixed(2) + "</td><td>" + "$" + loanBalance.toFixed(2) + "</td></tr>";
             years++;

@@ -20,6 +20,9 @@
         <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door1" onclick="pickDoor1()"/>
         <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door2" onclick="pickDoor2()"/>
         <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door3" onclick="pickDoor3()"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg" class="goat">
+        <img src="http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png" class="car">
+        
         <p style="margin-top: 25px; text-align: left;">Please select a door and then click continue</p>
         <p style="margin-top: 30px; text-align: left;" id="choice"></p>
 
@@ -27,52 +30,48 @@
         document.getElementById("continue").style.display="none";
         document.getElementById("switch").style.display="none";
         document.getElementById("stay").style.display="none";
+        document.getElementByClass("goat").style.display="none";
+        document.getElementByClass("car").style.display="none";
         function pickDoor1(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML = "You have chosen door 1";
+            continueDoor1();
+        }
+        function continueDoor1(){
+            document.getElementByClass("door1").style.display="none";
+            document.getElementById("choice").innerHTML = "You have chosen door 1. Would you like to switch doors or stay with door 1?";
+            document.getElementByClass("goat").style.display="initial";
+            hideContinue();
         }
         function pickDoor2(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML = "You have chosen door 2";
+            continueDoor2();
+        }
+        function continueDoor2(){
+            document.getElementById("choice").innerHTML = "You have chosen door 2. Would you like to switch doors or stay with door 2?";
+            hideContinue();
         }
         function pickDoor3(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML = "You have chosen door 3";
+            continueDoor3();
+        }
+        function continueDoor3(){
+            document.getElementById("choice").innerHTML = "You have chosen door 3. Would you like to switch doors or stay with door 3?";
+            hideContinue();
         }
         function hideContinue() {
             document.getElementById("continue").style.display="none";
             document.getElementById("switch").style.display="initial";
             document.getElementById("stay").style.display="initial";
-            }
-        var openDoor = new Image();
-        var closeDoor = new Image();
-        var checkDoor = new Image();
-        var goat = new Image();
-        var car = new Image();
-        imageopenDoor.src = "http://th08.deviantart.net/fs71/PRE/i/2012/109/8/d/open_door_png_by_glammgramma-d4wy185.png"
-        imagecloseDoor.src = "http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png"
-        imagecheckDoor.src = "http://www.come4news.com/images/users/5454/check.png"
-        imagegoat.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg"
-        imagecar.src = "http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png"
-
-        
-        var carDoor = Math.floor(Math.random() * 3);
-        var goatDoors = [];
-        i = -1
-        while(i++ < 3) {
-            if (i != carDoor) {goatDoors.push(i)};
-        }
-
-        
-        </script>
-    
-
-    
+            }        
+</script>
 </body>
 </html>

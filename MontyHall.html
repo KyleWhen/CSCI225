@@ -11,10 +11,10 @@
             <button type="button" class="button" id="continue" style="top: 40px;" onclick="hideContinue()">Continue</button>
         </div>
         <div class="switchButton">
-            <button type="button" class="button" id="switch" style="top: 40px;">Switch</button>
+            <button type="button" class="button" id="switch" style="top: 40px;" onclick="goatOrCar()">Switch</button>
         </div>
         <div class="stayButton">
-            <button type="button" class="button" id="stay" style="top: 40px;">Stay</button>
+            <button type="button" class="button" id="stay" style="top: 40px;" onclick="goatOrCar()">Stay</button>
         </div>
         <p align="center"><span id="status"></span></p>
         <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door1" id="door1" onclick="pickDoor1()"/>
@@ -94,6 +94,25 @@
 
         function moveDoor2(){
             document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
+            }
+            var winOrLose = new Array();
+            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
+            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
+            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
+            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
+            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
+            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
+            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
+            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
+            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
+            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function goatOrCar() {
+            document.randimg.src = winOrLose[getRandomInt(0, winOrLose.length - 1)];
             }
 </script>
 </body>

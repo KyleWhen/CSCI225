@@ -1,0 +1,20 @@
+.door1{
+    top: -50px;
+    left: 150px;
+    width: 250px;
+    height: 350px;
+}
+
+.door2{
+    top: 50px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.door3{
+    top: 75px;
+    left: 150px;
+    width: 50px;
+    height: 100px;
+}

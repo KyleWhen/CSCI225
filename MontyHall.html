@@ -7,6 +7,7 @@
         <title>Monty Hall Game</title>
     </head>
     <body>
+        <h1>Please select a door and then click continue</h1>
         <div class="continueButton">
             <button type="button" class="button" id="continue" onclick="hideContinue()">Continue</button>
         </div>
@@ -18,7 +19,7 @@
         </div>
         <p align="center"><span id="status"></span></p>
         <div class="door1">
-            <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" style="margin-top: -200px; margin-left: 500px; width: 250px; height: 350px;"/>
+            <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" style="margin-top: -50px; margin-left: 500px; width: 250px; height: 350px;"/>
         </div>
         <div class="door2">
             <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" style="margin-top: -50px; margin-left: 500px; width: 250px;"/>
@@ -36,9 +37,6 @@
             document.getElementById("switch").style.display="initial";
             document.getElementById("stay").style.display="initial";
             }
-  
-        var play = document.getElementById("status");
-        play.innerHTML = "Please select a door and then click continue";
         var openDoor = new Image();
         var closeDoor = new Image();
         var checkDoor = new Image();

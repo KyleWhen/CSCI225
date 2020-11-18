@@ -7,12 +7,50 @@
         <title>Monty Hall Game</title>
     </head>
     <body>
+        <div class="continueButton">
+            <button type="button" class="button" id="continue" onclick="hideContinue()">Continue</button>
+        </div>
         <div class="switchButton">
             <button type="button" class="button" id="switch">Switch</button>
         </div>
         <div class="stayButton">
             <button type="button" class="button" id="stat">Stay</button>
         </div>
+        <p align="center"><span id="status"></span></p>
+
+        <script>
+        function hideContinue() {
+            var hide = document.getElementById("continue");
+            if (hide.style.display === "none") {
+                hide.style.display = "none";
+            } else {
+                hide.style.display = "none";
+            }
+        }
+  
+        var play = document.getElementById("status");
+        play.innerHTML = "Please select a door and then click continue";
+        var openDoor = new Image();
+        var closeDoor = new Image();
+        var checkDoor = new Image();
+        var goat = new Image();
+        var car = new Image();
+        imageopenDoor.src = "http://th08.deviantart.net/fs71/PRE/i/2012/109/8/d/open_door_png_by_glammgramma-d4wy185.png"
+        imagecloseDoor.src = "http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png"
+        imagecheckDoor.src = "http://www.come4news.com/images/users/5454/check.png"
+        imagegoat.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg"
+        imagecar.src = "http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png"
+
+        
+        var carDoor = Math.floor(Math.random() * 3);
+        var goatDoors = [];
+        i = -1
+        while(i++ < 3) {
+            if (i != carDoor) {goatDoors.push(i)};
+        }
+
+        
+        </script>
     
 
     

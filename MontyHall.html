@@ -46,6 +46,7 @@
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML = "You have chosen door 1";
+            document.getElementById("choice").setAttribute("id", "choiceDoor1");
             continueDoor1();
         }
         function continueDoor1(){
@@ -60,6 +61,7 @@
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML="You have chosen door 2";
+            document.getElementById("choice").setAttribute("id", "choiceDoor2");
             continueDoor2();
         }
         function continueDoor2(){
@@ -74,6 +76,7 @@
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
             document.getElementById("choice").innerHTML="You have chosen door 3";
+            document.getElementById("choice").setAttribute("id", "choiceDoor3");
             continueDoor3();
         }
         function continueDoor3(){
@@ -91,7 +94,6 @@
         function moveDoor1(){
             document.getElementById("door1").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
         }
-
         function moveDoor2(){
             document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
             }
@@ -106,14 +108,17 @@
             winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
             winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
             winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-
         function goatOrCar() {
             document.randimg.src = winOrLose[getRandomInt(0, winOrLose.length - 1)];
+        }
+        function stayOrSwitch(){
+            if("choice" = "choiceDoor1"){
+                document.getElementById("choice").innerHTML="right"
             }
+        }
 </script>
 </body>
 </html>

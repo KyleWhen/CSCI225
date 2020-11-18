@@ -20,19 +20,19 @@
 }
 
 .continueButton{
-    top: 40px;
+    top: -100px;
     right: 20px;
     width: 450px;
 }
 
 .switchButton{
-    top: 40px;
+    top: -100px;
     right: 20px;
     width: 450px;
 }
 
 .stayButton{
-    top: 40px;
+    top: -100px;
     right: 20px;
     width: 450px;
 }

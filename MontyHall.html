@@ -17,9 +17,9 @@
             <button type="button" class="button" id="stay">Stay</button>
         </div>
         <p align="center"><span id="status"></span></p>
-        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door1"/>
-        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door2"/>
-        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door3"/>
+        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door1" onclick="pickDoor1()"/>
+        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door2" onclick="pickDoor2()"/>
+        <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door3" onclick="pickDoor3()"/>
         <p style="margin-top: 25px; text-align: left;">Please select a door and then click continue</p>
 
         <script>
@@ -31,6 +31,24 @@
             document.getElementById("switch").style.display="initial";
             document.getElementById("stay").style.display="initial";
             }
+        function pickDoor1(){
+            document.getElementById("continue").style.display="initial";
+            document.getElementById("switch").style.display="none";
+            document.getElementById("stay").style.display="none";
+            hideContinue();
+        }
+        function pickDoor2(){
+            document.getElementById("continue").style.display="initial";
+            document.getElementById("switch").style.display="none";
+            document.getElementById("stay").style.display="none";
+            hideContinue();
+        }
+        function pickDoor3(){
+            document.getElementById("continue").style.display="initial";
+            document.getElementById("switch").style.display="none";
+            document.getElementById("stay").style.display="none";
+            hideContinue();
+        }
         var openDoor = new Image();
         var closeDoor = new Image();
         var checkDoor = new Image();

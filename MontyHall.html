@@ -97,34 +97,6 @@
         function moveDoor2(){
             document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
             }
-        function display_random_image(){
-            var theImages = [{
-                src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg",
-            }, {
-                src: "http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png",
-            }];
-    
-        var preBuffer = [];
-        for (var i = 0, j = theImages.length; i < j; i++) {
-        preBuffer[i] = new Image();
-        preBuffer[i].src = theImages[i].src;
-        preBuffer[i].width = theImages[i].width;
-        preBuffer[i].height = theImages[i].height;
-    }
-        function getRandomInt(min,max){
-            imn = Math.floor(Math.random() * (max - min + 1)) + min;
-            return preBuffer[imn];
-        }    
-        var newImage = getRandomInt(0, preBuffer.length - 1);
-        var images = document.getElementsByTagName('img');
-        var l = images.length;
-        for (var p = 0; p < l; p++) {
-            images[0].parentNode.removeChild(images[0]);
-        }
-        document.body.appendChild(newImage);
-        }
-        //lines 100-125 are not permanent additions to my code. The code was sourced online so I could learn how to
-        //randomize the remaining door to show an image of a goat or a car
 </script>
 </body>
 </html>

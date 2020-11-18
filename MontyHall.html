@@ -54,7 +54,6 @@
             document.getElementById("door3").style.pointerEvents="none";
             document.getElementById("door2").style.display="none";
             document.getElementById("choice").innerHTML="You have chosen door 1. Would you like to switch doors or stay with door 1?";
-            document.getElementById("goat1").style.display="initial";
             moveDoor3();
         }
         function pickDoor2(){
@@ -93,8 +92,8 @@
             document.getElementById("stay").style.display="initial";
             }    
         function moveDoor3(){
-            document.getElementById("door3").setAttribute("class", "moveDoor3");
-            document.getElementById("door3").style.display="block";
+            var replaceDoor = document.getElementById("door3")[0];
+            replaceDoor.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
             }
 </script>
 </body>

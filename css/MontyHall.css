@@ -1,10 +1,13 @@
 .door1{
     top: -35px;
+    left: 30px;
 
 }
 .door2{
-    top: -35px
+    top: -35px;
+    left: 50px;
 }
 .door3{
     top: -35px;
+    left: 100px;
 }

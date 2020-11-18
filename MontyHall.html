@@ -26,29 +26,26 @@
         document.getElementById("continue").style.display="none";
         document.getElementById("switch").style.display="none";
         document.getElementById("stay").style.display="none";
-        function hideContinue() {
-            document.getElementById("continue").style.display="none";
-            document.getElementById("switch").style.display="initial";
-            document.getElementById("stay").style.display="initial";
-            }
         function pickDoor1(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
-            hideContinue();
         }
         function pickDoor2(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
-            hideContinue();
         }
         function pickDoor3(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
             document.getElementById("stay").style.display="none";
-            hideContinue();
         }
+        function hideContinue() {
+            document.getElementById("continue").style.display="none";
+            document.getElementById("switch").style.display="initial";
+            document.getElementById("stay").style.display="initial";
+            }
         var openDoor = new Image();
         var closeDoor = new Image();
         var checkDoor = new Image();

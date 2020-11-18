@@ -40,20 +40,20 @@
 .goat1{
     top: 100px;
     left: -500px;
-    width: 250px;
-    height: 350px;
+    width: 100px;
+    height: 100px;
 }
 
 .goat2{
     top: -100px;
     left: 300px;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 .goat3{
     top: 200px;
     left: 400px;
-    width: 250px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
 }

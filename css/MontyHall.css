@@ -45,14 +45,14 @@
 }
 
 .goat2{
-    top: 100px;
+    top: -100px;
     left: 300px;
     width: 250px;
     height: 350px;
 }
 
 .goat3{
-    top: 100px;
+    top: 200px;
     left: 400px;
     width: 250px;
     height: 350px;

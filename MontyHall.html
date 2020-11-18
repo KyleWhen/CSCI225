@@ -98,7 +98,6 @@
             document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
         }
         function switchButton(){
-            document.getElementById("stayButton").style.pointerEvents="none";
             if(choice = "choice1"){
                 document.getElementById("door3").src="http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png";
             }
@@ -108,6 +107,7 @@
             else if(choice = "choice3"){
                 document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
             }
+            document.getElementById("stayButton").style.pointerEvents="none";
         }
         function stayButton(){
             //document.getElementById("switchButton").style.pointerEvents="none";

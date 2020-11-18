@@ -59,7 +59,8 @@
 }
 
 .moveDoor3{
-    left: 0px;
+    top: 100px;
+    left: 500px;
     width: 250px;
     height: 350px;
 }

@@ -18,3 +18,15 @@
     width: 250px;
     height: 350px;
 }
+
+.continueButton{
+    top: 100px;
+}
+
+.switchButton{
+    top: 100px;
+}
+
+.stayButton{
+    top: 100px;
+}

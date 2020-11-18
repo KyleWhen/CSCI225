@@ -11,10 +11,10 @@
             <button type="button" class="button" id="continue" style="top: 40px;" onclick="hideContinue()">Continue</button>
         </div>
         <div class="switchButton">
-            <button type="button" class="button" id="switch" style="top: 40px;" onclick="stayOrSwitch()">Switch</button>
+            <button type="button" class="button" id="switch" style="top: 40px;" onclick="display_random_image()">Switch</button>
         </div>
         <div class="stayButton">
-            <button type="button" class="button" id="stay" style="top: 40px;" onclick="stayOrSwitch()">Stay</button>
+            <button type="button" class="button" id="stay" style="top: 40px;" onclick="display_random_image()">Stay</button>
         </div>
         <p align="center"><span id="status"></span></p>
         <img src="http://th01.deviantart.net/fs71/PRE/i/2012/109/6/f/closed_door_png_by_glammgramma-d4wy1cv.png" class="door1" id="door1" onclick="pickDoor1()"/>
@@ -97,29 +97,34 @@
         function moveDoor2(){
             document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
             }
-            var winOrLose = new Array();
-            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
-            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
-            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
-            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
-            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-            winOrLose.push("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg");
-            winOrLose.push("http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png");
-
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
+        function display_random_image(){
+            var theImages = [{
+                src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg",
+            }, {
+                src: "http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png",
+            }];
+    
+        var preBuffer = [];
+        for (var i = 0, j = theImages.length; i < j; i++) {
+        preBuffer[i] = new Image();
+        preBuffer[i].src = theImages[i].src;
+        preBuffer[i].width = theImages[i].width;
+        preBuffer[i].height = theImages[i].height;
+    }
+        function getRandomInt(min,max){
+            imn = Math.floor(Math.random() * (max - min + 1)) + min;
+            return preBuffer[imn];
+        }    
+        var newImage = getRandomInt(0, preBuffer.length - 1);
+        var images = document.getElementsByTagName('img');
+        var l = images.length;
+        for (var p = 0; p < l; p++) {
+            images[0].parentNode.removeChild(images[0]);
         }
-        function goatOrCar() {
-            document.randimg.src = winOrLose[getRandomInt(0, winOrLose.length - 1)];
+        document.body.appendChild(newImage);
         }
-        function stayOrSwitch(){
-            if("choice" = "choiceDoor1"){
-                document.getElementById("choice").innerHTML="right";
-        }
-}
+        //lines 100-125 are not permanent additions to my code. The code was sourced online so I could learn how to
+        //randomize the remaining door to show an image of a goat or a car
 </script>
 </body>
 </html>

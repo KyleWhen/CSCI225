@@ -40,6 +40,7 @@
         document.getElementById("car1").style.display="none";
         document.getElementById("car2").style.display="none";
         document.getElementById("car3").style.display="none";
+
         function pickDoor1(){
             document.getElementById("continue").style.display="initial";
             document.getElementById("switch").style.display="none";
@@ -53,7 +54,7 @@
             document.getElementById("door3").style.pointerEvents = "none";
             document.getElementById("door2").style.display="none";
             document.getElementById("choice").innerHTML = "You have chosen door 1. Would you like to switch doors or stay with door 1?";
-            document.getElementById("goat1").style.display="initial";
+            moveGoat1();
         }
         function pickDoor2(){
             document.getElementById("continue").style.display="initial";
@@ -85,11 +86,14 @@
             document.getElementById("choice").innerHTML = "You have chosen door 1. Would you like to switch doors or stay with door 1?";
             document.getElementById("goat3").style.display="initial";
         }
-        function hideContinue() {
+        function hideContinue(){
             document.getElementById("continue").style.display="none";
             document.getElementById("switch").style.display="initial";
             document.getElementById("stay").style.display="initial";
             }    
+        function moveGoat1(){
+            document.getElementById('goat1').setAttribute("class", "goat1door1");
+            }
 </script>
 </body>
 </html>

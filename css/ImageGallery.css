@@ -1,0 +1,21 @@
+.h3{
+    color: black;
+    text-shadow: 1px 1px #ffffff;
+}
+.carousel-control{
+    height: auto;
+    width: auto;
+}
+.img{
+    margin: auto;
+    width: 40%;
+}
+.item{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+.carousel-caption{
+    color: #000000;
+}

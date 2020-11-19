@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/MyCSS.css">
+        <link rel="stylesheet" href="css/ImageGallery.css">
+        <meta charset="utf-8"/>
+        <title>Image Gallery</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Super Mario Sunshine Image Gallery</h2>
+            <p id="description">This image gallery will take you through Super Mario Sunshine and all 7 (technically 9) levels of the game</p>  
+        <div id="imageGallery" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#imageGallery" data-slide-to="0" class="active"></li>
+                <li data-target="#imageGallery" data-slide-to="1"></li>
+                <li data-target="#imageGallery" data-slide-to="2"></li>
+                <li data-target="#imageGallery" data-slide-to="3"></li>
+                <li data-target="#imageGallery" data-slide-to="4"></li>
+                <li data-target="#imageGallery" data-slide-to="5"></li>
+                <li data-target="#imageGallery" data-slide-to="6"></li>
+                <li data-target="#imageGallery" data-slide-to="7"></li>
+                <li data-target="#imageGallery" data-slide-to="8"></li>
+                <li data-target="#imageGallery" data-slide-to="9"></li>
+                <li data-target="#imageGallery" data-slide-to="10"></li>
+            </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/78/Super_mario_sunshine.jpg" alt="Super Mario Sunshine Box Art" onclick="description0()">
+        <div class="carousel-caption">
+            <h3>Super Mario Sunshine</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The box art for Super Mario Sunshine</p>
+          </div>
+      </div>
+
+      <div class="item">
+        <img src="https://www.mariowiki.com/images/9/98/Delfinoplazasunshine.png" alt="Delfino Plaza" onclick="description1()">
+        <div class="carousel-caption">
+            <h3>Delfino Plaza</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The hub world for Super Mario Sunshine</p>
+          </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://www.mariowiki.com/images/f/f1/Bianco_Hills_Top.png" alt="Bianco Hills" onclick="description2()">
+        <div class="carousel-caption">
+            <h3>Bianco Hills</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The first level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/7/76/SMS_Ricco_Harbor_Overview.png" alt="Ricco Harbor" onclick="description3()">
+        <div class="carousel-caption">
+            <h3>Ricco Harbor</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The second level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/0/09/SMS_Gelato_Beach_Overview.png" alt="Gelato Beach" onclick="description4()">
+        <div class="carousel-caption">
+            <h3>Gelato Beach</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The third level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/4/47/SMS_Pinna_Park_Overview.png" alt="Pinna Park" onclick="description5()">
+        <div class="carousel-caption">
+            <h3>Pinna Park</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The fourth level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/7/78/SMS_Sirena_Beach_Overview.png" alt="Sirena Beach" onclick="description6()">
+        <div class="carousel-caption">
+            <h3>Sirena Beach</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The fifth level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://static.wikia.nocookie.net/mario/images/b/b5/NokiBay_SMSunshine.jpg/revision/latest?cb=20150722072508" alt="Noki Bay" onclick="description7()">
+        <div class="carousel-caption">
+            <h3>Noki Bay</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The sixth level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/3/36/Delfino_Village_Map.jpg" alt="Pianta Village" onclick="description8()">
+        <div class="carousel-caption">
+            <h3>Pianta Village</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The seventh level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/d/df/Corona_Mountain.png" alt="Corona Mountain" onclick="description9()">
+        <div class="carousel-caption">
+            <h3>Corona Mountain</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">The "eighth" level of Super Mario Sunshine</p>
+          </div>
+      </div>
+
+    <div class="item">
+        <img src="https://www.mariowiki.com/images/e/e7/Delfinoairstrip.png" alt="Delfino Airstrip" onclick="description10()">
+        <div class="carousel-caption">
+            <h3>Delfino Airstrip</h3>
+            <p style="color:black; text-shadow: 1px 1px #ffffff;">Both the "first" and the "last" level of Super Mario Sunshine</p>
+          </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#imageGallery" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#imageGallery" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</head>
+<script>
+    function description0(){
+        document.getElementById("description").innerHTML="This is the box art for Super Mario Sunshine. Super Mario Sunshine released for the Nintendo Gamecube in 2004";
+    }
+    function description1(){
+        document.getElementById("description").innerHTML="This is Delfino Plaza, the hub world for Super Mario Sunshine. Delfino Plaza houses every level the player can access. Delfino Plaza starts off dark, but gradually grows brighter with the collection of each Shine Sprite.";
+    }
+    function description2(){
+        document.getElementById("description").innerHTML="This is Bianco Hills, the first level of Super Mario Sunshine. The layout is nothing outstanding since it only contains a small town that leads to a sort of gathering spot where some mission objectives take place.";
+    }
+    function description3(){
+        document.getElementById("description").innerHTML="This is Ricco Harbor, the second level of Super Mario Sunshine. Bustling construction sites mark this fair port city for Mario to explore as needed.";
+    }
+    function description4(){
+        document.getElementById("description").innerHTML="This is Gelato Beach, the third level of Super Mario Sunshine. Perhaps one of the more generic stages within the game, Gelato Beach's main draw is that of the Sand Bird housed within the structure on which the green worm creature sits.";
+    }
+    function description5(){
+        document.getElementById("description").innerHTML="This is Pinna Park, the fourth level of Super Mario Sunshine. The game's plot begins to pick up here for just a moment before sinking back into the background. Pinna Park is marked by being divided into two parts: an outdoors resort area not pictured and the actual park itself which is pictured. The outdoors area holds little of note, but the park itself has many rides that can be explored at one's leisure.";
+    }
+    function description6(){
+        document.getElementById("description").innerHTML="This is Sirena Beach, the fifth level of Super Mario Sunshine. Sirena Beach is divided into three areas: an outdoor beach area, the interior of the hotel, and a casino within the hotel. Various locked doors and ghouly trickery makes for a unique twist on an otherwise linear structure.";
+    }
+    function description7(){
+        document.getElementById("description").innerHTML="This is Noki Bay, the sixth level of Super Mario Sunshine. This level follows its own sort of story arc in the sense that each completed mission unlocks something new to do. For example, upon first entry the waterfall is corked and needs to be unplugged. After the cork is unplugged, the water is polluted which prompts Mario to take multiple attempts to purify the water. Noki Bay's main draw is little panels that can be sprayed with water to reveal ruin-like nooks and crannies.";
+    }
+    function description8(){
+        document.getElementById("description").innerHTML="This is Pianta Village, the seventh level of Super Mario Sunshine. This massive tree holds what is stated to be the origin place for the habitants of Delfino Plaza, the Piantas. Although not entirely visible from the picture, there is an entire underside system to Pianta Village that will need to be navigated at some point.";
+    }
+    function description9(){
+        document.getElementById("description").innerHTML="This is Corona Mountain. Although it is not listed as such officialy by the game, this is most definitely the eighth level of Super Mario Sunshine. Corona Mountain is a deceptfully straightforward level with most of the challenge coming from Mario needing to navigate a clay boat via the power of using his water jetpack, FLUDD, as a sort of propeller and engine without touching any walls as that would sink the boat. Upon getting to the end of Corona Mountain and blasting off to the peak of the mountain, Mario is greeted to a climactic battle against Bowser and Bowser Jr.";
+    }
+    function description10(){
+        document.getElementById("description").innerHTML="This is Delfino Airstrip. If you want to be technical, this is the true first level of Super Mario Sunshine as it is where Mario first disembarks and where Mario obtains the first Shine Sprite. However, you cannot access Delfino Airstrip again until after you defeat Bowser and Bowser Jr. in Corona Mountain so this would officially distinguish Delfino Airstrip as the ninth and final level in the game. On the first visit to Delfino Plaza, Mario obtains FLUDD and defeats a Proto Piranha which drops the first Shine Sprite. After collecting the first Shine Sprite, Mario is taken to jail and tried for a crime he didn't commit. On a returning visit, Delfino Plaza allows Mario to collect 100 coins for another Shine Sprite and generally serves as a sort of final hurrah for the player.";
+    }
+</script>
+</html>

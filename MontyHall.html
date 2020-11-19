@@ -7,6 +7,8 @@
         <title>Monty Hall Game</title>
     </head>
     <body>
+        <h1>Monty Hall Game</h1>
+        <p>This is the Monty Hall Game. Simply select the door you want to have Monty reveal what is behind another door. Once Monty does so, simply decide if you would like what was behind the door you initially chose or if you would like to change your mind to claim what is behind the remaining closed door.</p>
         <div class="continueButton">
             <button type="button" class="button" id="continue" style="top: 40px;" onclick="hideContinue()">Continue</button>
         </div>
@@ -100,19 +102,28 @@
         function switchButton(){
             if(choice = "choice1"){
                 document.getElementById("door3").src="http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png";
+                document.getElementById("choice").innerHTML="You won! Please refresh the page to try again!";
+                choice = document.getElementById("choice").innerHTML="You won! Please refresh the page to try again!";
             }else if(choice = "choice2"){
                 document.getElementById("door3").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
+                document.getElementById("choice").innerHTML="You won! Please refresh the page to try again!";
             }else{
                 document.getElementById("door2").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
+                document.getElementById("choice").innerHTML="Door 2 won't budge! Just take what's behind Door 3...you won! Please refresh the page to try again!";
+                //this option just does not work for some reason
             }
         }
         function stayButton(){
             if(choice = "choice1"){
                 document.getElementById("door1").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
+                document.getElementById("choice").innerHTML="You lose! Please refresh the page to try again!";
             }else if(choice = "choice2"){
                 document.getElementById("door2").src="http://www.wpclipart.com/transportation/car/classic_cars/purple_muscle_car.png";
+                document.getElementById("choice").innerHTML="The door won't budge! Please refresh the page to try again!";
+                //staying on choice 2 does not work
             }else{
                 document.getElementById("door3").src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1200px-Hausziege_04.jpg";
+                document.getElementById("choice").innerHTML="The door won't budge! Please refresh the page to try again!";
             }
         }
 </script>

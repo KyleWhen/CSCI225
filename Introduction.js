@@ -14,3 +14,7 @@ var firebaseConfig = {
     .firestore()
     .collection("feedback")
     .add(inputJson);
+
+    $(".rating input[type='submit']").click(function(e){
+        e.preventDefault();
+      });

@@ -2,13 +2,19 @@ body {
   background-color: hsla(184, 100%, 41%, 0.77);
 }
 
+h1 {
+  border-style: inset;
+  border-color: hsl(102, 100%, 67%);
+  background-color: hsl(102, 100%, 67%);
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: hsl(0, 100%, 50%);
-    width: 40%;
+    width: 100%;
     position: fixed;
     top: 0px;
     left: 0%;
@@ -29,10 +35,9 @@ ul {
   
   .border {
     border: 5px outset hsl(0, 100%, 50%);
-    position: fixed;
     top: 13%;
     left: 250px;
-    width: 885px;
+    width: 885px; 
     background-color: hsl(39, 100%, 50%);
   }
 
@@ -76,6 +81,11 @@ ul {
     overflow-x: auto;
     transition: all .2s ease-in-out;
   }
+  p#displayNumber{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
   
   .input:hover {
     border: 1px solid #bbb;
@@ -83,9 +93,19 @@ ul {
     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   }
   
-  .buttons {}
-  
-  .operators {}
+  .button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 85px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
   
   .operators div {
     display: inline-block;
@@ -163,4 +183,8 @@ ul {
   
   div.equal:active {
     font-weight: bold;
+  }
+  
+  .seven{
+    width: 80px;
   }

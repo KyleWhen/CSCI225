@@ -30,7 +30,7 @@ $("form").submit(function (e) {
     .add(inputJson);
 });
 
-$("class").submit(function (e) {
+$("comment").submit(function (e) {
   e.preventDefault();
   var inputdata = $("form").serializeArray();
   console.log(inputdata);

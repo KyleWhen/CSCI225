@@ -1,4 +1,4 @@
-var firebaseConfig = {
+/*var firebaseConfig = {
     apiKey: "AIzaSyAQ3-DuFMINqU412qUeua5WMZZPU1l1EuU",
     authDomain: "grocerylist-bde77.firebaseapp.com",
     databaseURL: "https://grocerylist-bde77.firebaseio.com",
@@ -9,6 +9,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  */
 
 var num = 0;
 var oper = "*";

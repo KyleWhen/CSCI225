@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 
 
 
-$(".rating input[type='submit']").submit(function (e) {
+$("form").submit(function (e) {
   e.preventDefault();
   var inputdata = $("form").serializeArray();
   console.log(inputdata);

@@ -29,3 +29,21 @@ $("form").submit(function (e) {
     .collection("feedback")
     .add(inputJson);
 });
+
+$("class").submit(function (e) {
+  e.preventDefault();
+  var inputdata = $("form").serializeArray();
+  console.log(inputdata);
+  var inputJson = {};
+  for (var i = 0; i < inputdata.length; i++) {
+    var name = inputdata[i]["name"];
+    var value = inputdata[i]["value"];
+    console.log(name + " " + value);
+    inputJson[name] = value;
+  }
+
+  firebase
+    .firestore()
+    .collection("feedback")
+    .add(inputJson);
+});

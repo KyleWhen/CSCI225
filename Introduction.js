@@ -7,12 +7,12 @@ var firebaseConfig = {
   messagingSenderId: "139163594125",
   appId: "1:139163594125:web:36edde353ef2c80e4861c4"
 };
-// Initialize Firebase
+// Initialize Firebase commit test
 firebase.initializeApp(firebaseConfig);
 
 
 
-$(".rating input[type='submit']").click(function (e) {
+$(".rating input[type='submit']").submit(function (e) {
   e.preventDefault();
   var inputdata = $("form").serializeArray();
   console.log(inputdata);

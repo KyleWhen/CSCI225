@@ -106,7 +106,6 @@ $('#divide').click(function(){
 
 $('#power').click(function(){
     $("#displayNumber").text("^");
-    //commit
     numList.push(numListValue);
     if (operList.length != 0) {
         docalculation();

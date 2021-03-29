@@ -7,7 +7,7 @@ var numListValue = 0;
 $("#displayNumber").text("11 + 18 = ?");
 
 $('#four').click(function(){
-    $("#displayNumber").text("4");
+    $("#displayNumber").text("11 + 18 = 29");
     numListValue = (numListValue * 10) + 4;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("11 + 18 = 29");
 });

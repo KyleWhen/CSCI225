@@ -30,21 +30,21 @@ $('#three').click(function(){
 });
 
 $('#four').click(function(){
-    $("#displayNumber").text("4");
+    $("#displayNumber").text("Left");
     numListValue = (numListValue * 10) + 4;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("Left");
 });
 
 $('#five').click(function(){
-    $("#displayNumber").text("5");
+    $("#displayNumber").text("Middle");
     numListValue = (numListValue * 10) + 5;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("Middle");
 });
 
 $('#six').click(function(){
-    $("#displayNumber").text("6");
+    $("#displayNumber").text("Right");
     numListValue = (numListValue * 10) + 6;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("Right");
 });
 
 $('#seven').click(function(){

@@ -5,12 +5,6 @@ var operList = [];
 var operand = ["",""];
 var numListValue = 0;
 
-$('#zero').click(function(){
-    $("#displayNumber").text("0");
-    numListValue = (numListValue * 10) + 0;
-    $('#displayNumber').text(numListValue);
-});
-
 $('#four').click(function(){
     $("#displayNumber").text("Left");
     numListValue = (numListValue * 10) + 4;

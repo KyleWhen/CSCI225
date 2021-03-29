@@ -11,24 +11,6 @@ $('#zero').click(function(){
     $('#displayNumber').text(numListValue);
 });
 
-$('#one').click(function(){
-    $("#displayNumber").text("1");
-    numListValue = (numListValue * 10) + 1;
-    $('#displayNumber').text(numListValue);    
-});
-
-$('#two').click(function(){
-    $("#displayNumber").text("2");
-    numListValue = (numListValue * 10) + 2;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#three').click(function(){
-    $("#displayNumber").text("3");
-    numListValue =(numListValue * 10 ) + 3;
-    $('#displayNumber').text(numListValue);
-});
-
 $('#four').click(function(){
     $("#displayNumber").text("Left");
     numListValue = (numListValue * 10) + 4;
@@ -45,78 +27,6 @@ $('#six').click(function(){
     $("#displayNumber").text("Right");
     numListValue = (numListValue * 10) + 6;
     $('#displayNumber').text("Right");
-});
-
-$('#seven').click(function(){
-    $("#displayNumber").text("7");
-    numListValue = (numListValue * 10) + 7;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#eight').click(function(){
-    $("#displayNumber").text("8");
-    numListValue = (numListValue * 10) + 8;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#nine').click(function(){
-    numListValue = (numListValue * 10) + 9;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#plus').click(function(){
-    $("#displayNumber").text("+");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }  
-    operList.push('+');
-    numListValue= 0;
-});
-
-$('#minus').click(function(){
-    $("#displayNumber").text("-");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('-');
-    numListValue = 0;
-});
-
-$('#multiply').click(function(){
-    $("#displayNumber").text("*");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('*');
-    numListValue = 0;
-});
-
-$('#divide').click(function(){
-    $("#displayNumber").text("/");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('/');
-    numListValue = 0;
-});
-
-$('#power').click(function(){
-    $("#displayNumber").text("^");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('^');
-    numListValue = 0;
-});
-
-$('#decimal').click(function(){
-    $("#displayNumber").text(".");
-    numList.push('.');
 });
 
 $('#clear').click(function(){

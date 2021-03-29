@@ -12,11 +12,9 @@ $('#Sinister').click(function(){
 
 $('#Medium').click(function(){
     $("#displayNumber").text("Middle");
-    $('#displayNumber').text("Middle");
 });
 
 $('#Dexter').click(function(){
     $("#displayNumber").text("Right");
-    $('#displayNumber').text("Right");
 });
 

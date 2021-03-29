@@ -4,6 +4,7 @@ var numList = [];
 var operList = [];
 var operand = ["",""];
 var numListValue = 0;
+$("#displayNumber").text("11 + 18 = ?");
 
 $('#four').click(function(){
     $("#displayNumber").text("4");

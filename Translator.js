@@ -35,11 +35,3 @@ $('#clear').click(function(){
     operList = [];
     numListValue = "";
 });
-
-$('#result').click(function(){
-    numList.push(numListValue);
-    numListValue = 0
-    if (operList.length != 0) {
-        docalculation();
-    }
-});

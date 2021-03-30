@@ -40,10 +40,3 @@ $('#nine').click(function(){
     numListValue = (numListValue * 10) + 9;
     $('#displayNumber').text("SC");
 });
-
-$('#clear').click(function(){
-    $("#displayNumber").text("");
-    numList= [];
-    operList = [];
-    numListValue = "";
-});

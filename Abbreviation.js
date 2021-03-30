@@ -38,7 +38,7 @@ $('#eight').click(function(){
 $('#nine').click(function(){
     $("#displayNumber").text("SC");
     numListValue = (numListValue * 10) + 9;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("SC");
 });
 
 $('#clear').click(function(){

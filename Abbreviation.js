@@ -5,118 +5,40 @@ var operList = [];
 var operand = ["",""];
 var numListValue = 0;
 
-$('#zero').click(function(){
-    $("#displayNumber").text("0");
-    numListValue = (numListValue * 10) + 0;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#one').click(function(){
-    $("#displayNumber").text("1");
-    numListValue = (numListValue * 10) + 1;
-    $('#displayNumber').text(numListValue);    
-});
-
-$('#two').click(function(){
-    $("#displayNumber").text("2");
-    numListValue = (numListValue * 10) + 2;
-    $('#displayNumber').text(numListValue);
-});
-
-$('#three').click(function(){
-    $("#displayNumber").text("3");
-    numListValue =(numListValue * 10 ) + 3;
-    $('#displayNumber').text(numListValue);
-});
-
 $('#four').click(function(){
-    $("#displayNumber").text("4");
+    $("#displayNumber").text("GA");
     numListValue = (numListValue * 10) + 4;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("GA");
 });
 
 $('#five').click(function(){
-    $("#displayNumber").text("5");
+    $("#displayNumber").text("AL");
     numListValue = (numListValue * 10) + 5;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("AL");
 });
 
 $('#six').click(function(){
-    $("#displayNumber").text("6");
+    $("#displayNumber").text("FL");
     numListValue = (numListValue * 10) + 6;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("FL");
 });
 
 $('#seven').click(function(){
-    $("#displayNumber").text("7");
+    $("#displayNumber").text("VA");
     numListValue = (numListValue * 10) + 7;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("VA");
 });
 
 $('#eight').click(function(){
-    $("#displayNumber").text("8");
+    $("#displayNumber").text("NC");
     numListValue = (numListValue * 10) + 8;
-    $('#displayNumber').text(numListValue);
+    $('#displayNumber').text("NC");
 });
 
 $('#nine').click(function(){
+    $("#displayNumber").text("SC");
     numListValue = (numListValue * 10) + 9;
     $('#displayNumber').text(numListValue);
-});
-
-$('#plus').click(function(){
-    $("#displayNumber").text("+");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }  
-    operList.push('+');
-    numListValue= 0;
-});
-
-$('#minus').click(function(){
-    $("#displayNumber").text("-");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('-');
-    numListValue = 0;
-});
-
-$('#multiply').click(function(){
-    $("#displayNumber").text("*");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('*');
-    numListValue = 0;
-});
-
-$('#divide').click(function(){
-    $("#displayNumber").text("/");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('/');
-    numListValue = 0;
-});
-
-$('#power').click(function(){
-    $("#displayNumber").text("^");
-    numList.push(numListValue);
-    if (operList.length != 0) {
-        docalculation();
-    }
-    operList.push('^');
-    numListValue = 0;
-});
-
-$('#decimal').click(function(){
-    $("#displayNumber").text(".");
-    numList.push('.');
 });
 
 $('#clear').click(function(){
@@ -124,44 +46,4 @@ $('#clear').click(function(){
     numList= [];
     operList = [];
     numListValue = "";
-});
-
-function docalculation(){
-    var result = 0;
-    var num2 = numList[numList.length-1];
-    console.log("num2="+num2);
-    numList.pop();
-    var num1 = numList[numList.length-1];
-    console.log("num1="+num1);
-    numList.pop();
-    oper = operList[operList.length-1];
-    console.log("oper="+oper);
-    operList.pop();
-    console.log("num1="+num1+" num2="+num2+" oper="+oper);
-    if (oper === '+'){
-        result = num1 + num2;
-        numList.push(result);
-    } else if (oper === '-'){
-        result = num1 - num2;
-        numList.push(result);
-    } else if (oper === '*') {
-        result = num1 * num2;
-        numList.push(result);
-    } else if (oper === '/') {
-        result = num1 / num2;
-        numList.push(result);
-    } else if (oper === '^') {
-        result = Math.pow(num1, num2);
-        numList.push(result);
-    }
-
-    $("#displayNumber").text(result);
-}
-
-$('#result').click(function(){
-    numList.push(numListValue);
-    numListValue = 0
-    if (operList.length != 0) {
-        docalculation();
-    }
 });
